@@ -1,7 +1,7 @@
 import os
 
 
-def path_fun(path):
+def path(path):
     lst_files = []
     files = os.listdir(path)  # get all the files in the directory in the end of the path
     for file in files:
