@@ -1,18 +1,16 @@
 import os
 
 
-def path(path):
-    lst_files = []
-    files = os.listdir(path)  # get all the files in the directory in the end of the path
-    for file in files:
-        if file.startswith("deep"):
-            lst_files.append(file)
-    return lst_files
+def files_start_with(directory_path):
+    """ Return list of the files, in the directory at the end of the path, start with deep"""
+    files = os.listdir(directory_path)  # get all the files in the directory in the end of the path
+    files_list = [file for file in files if file.startswith("deep")]
+    return files_list
 
 
 def main():
-    path = input("Enter path please:\n")
-    path_fun(path)
+    path = input("Enter a path please:\n")
+    print(files_starts_with(path))
 
 
 if __name__ == '__main__':
