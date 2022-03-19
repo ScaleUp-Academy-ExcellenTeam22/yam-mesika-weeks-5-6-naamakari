@@ -15,7 +15,7 @@ def get_recipe_price(prices, optionals=None, **ingredients_and_amounts):
                    ingredient2, amount in ingredients_and_amounts.items() if ingredient1 == ingredient2]
     if not ingredients:  # if there is no ingredients for the recipe
         return 0
-    return int(reduce(add_floats, ingredients))  # sum all the prices to total price
+    return reduce(add_floats, ingredients)  # sum all the prices to total price
 
 
 """ for ingredient1, price in prices.items():
