@@ -12,7 +12,7 @@ def files_start_with_deep(directory_path: str) -> list:
 
 def main():
     path = input("Enter a path please:\n")
-    print(files_start_with(path))
+    print(files_start_with_deep(path))
 
 
 if __name__ == '__main__':
