@@ -1,7 +1,7 @@
 import os
 
 
-def files_start_with(directory_path: str) -> list:
+def files_start_with_deep(directory_path: str) -> list:
     """
     Return list of the files, in the directory at the end of the path, start with 'deep'.
     :param directory_path: The directory path where we want to go through the files and check them.
